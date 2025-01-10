@@ -1,0 +1,26 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #831818;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+.news {
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center; 
+     
+}

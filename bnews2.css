@@ -1,0 +1,186 @@
+/* Global Styles */
+html, body {
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F3EF; /* Light taupe background */
+    color: #2D2D2D; /* Dark charcoal gray text */
+    display: flex;
+    flex-direction: column; /* Enable a column layout for header, content, and footer */
+}
+
+/* Header */
+.header {
+    background-color: #C05A2B; /* Burnt orange for basketball theme */
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a.active {
+    text-decoration: underline;
+}
+
+.navbar ul li a:hover {
+    color: #F5F3EF;
+}
+
+/* Main Content */
+main {
+    flex: 1; /* Ensures the main content stretches to fill available space */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F5F3EF;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #C05A2B;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #2D2D2D;
+}
+
+/* News Content Section */
+.news-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+    flex: 1 1 40%;
+    max-width: 400px;
+}
+
+.news-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.news-details {
+    flex: 1 1 60%;
+}
+
+.news-details h2 {
+    color: #C05A2B;
+    margin-bottom: 15px;
+}
+
+.news-details p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.news-details blockquote {
+    margin: 15px 0;
+    padding: 10px 15px;
+    border-left: 4px solid #C05A2B;
+    background-color: #F5F3EF;
+    font-style: italic;
+    color: #2D2D2D;
+}
+
+/* Watch Highlights Section */
+.watch-highlights {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.watch-highlights h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #C05A2B;
+    margin-bottom: 30px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller, square videos */
+    gap: 20px;
+    padding: 10px;
+}
+
+.video-item {
+    background-color: #F5F3EF;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.video-item iframe {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Makes the iframe a perfect square */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.video-item p {
+    font-weight: bold;
+    font-size: 0.9rem; /* Smaller font size for video descriptions */
+    color: #2D2D2D;
+    margin-top: 5px; /* Tighter spacing */
+    line-height: 1.4;
+}
+
+/* Footer */
+.footer {
+    background-color: #C05A2B;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Ensures the footer sticks to the bottom of the viewport */
+}

@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Desktop/table.html"
+		},
+		{
+			"path": "../../Desktop/homepage.html"
+		},
+		{
+			"path": "../../Desktop/news-page"
+		},
+		{
+			"path": "../../Desktop/transfers.html"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "website 3AM"
+	}
+}

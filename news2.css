@@ -1,0 +1,136 @@
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height for the page */
+    display: flex;
+    flex-direction: column; /* Flex layout for sticky footer */
+    background-color: #F9F9F9; /* Light gray background */
+    color: #2C2C2C; /* Charcoal gray text */
+}
+
+header {
+    background-color: #37474F; /* Muted navy for NFL */
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a.active {
+    text-decoration: underline;
+}
+
+.navbar ul li a:hover {
+    color: #FFD700; /* Gold hover effect */
+}
+
+/* Main Content Layout */
+main {
+    flex: 1; /* Allow main content to fill remaining space */
+    padding-bottom: 40px; /* Space between content and footer */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #37474F;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #2C2C2C;
+}
+
+/* Quarterbacks Section */
+.quarterbacks {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.quarterbacks h2 {
+    font-size: 2rem;
+    color: #37474F;
+    margin-bottom: 20px;
+}
+
+.quarterback-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.quarterback-card {
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.quarterback-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.quarterback-card h3 {
+    font-size: 1.2rem;
+    color: #37474F;
+    margin-bottom: 10px;
+}
+
+.quarterback-card p {
+    font-size: 1rem;
+    color: #2C2C2C;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #37474F;
+    color: #ffffff;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer p {
+    margin: 0;
+}
